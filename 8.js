@@ -6,7 +6,7 @@ function tweet() {
   let tweetVal = document.querySelector("#tweetBox").value;
 
   let newChild = `<div class="col-12 p-1">
-    <div class="alert alert-success">
+    <div class="alert alert-primary">
         ${tweetVal}
 
       <div class="mt-2">
