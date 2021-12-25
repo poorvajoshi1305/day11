@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row bg-success text-light">
+      <div class="row bg-success text-light sticky-top">
         <div class="col p-2 fs-2">Tweet Book</div>
       </div>
 
@@ -26,8 +26,8 @@
             class="form-control w-100 form-control-lg"
             type="text"
             name=""
-            id=""
-            placeholder="Tweett her..."
+            id="tweetBox"
+            placeholder="Tweett here..."
           />
         </div>
         <div class="col-4 p-1">
@@ -35,32 +35,12 @@
             class="btn btn-success btn-lg w-100"
             type="button"
             value="Tweet"
+            onclick="tweet()"
           />
         </div>
       </div>
 
-      <div class="row" id="parent">
-        <div class="col-12 p-1">
-          <div class="alert alert-success">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            impedit, sapiente incidunt illo officia iste rem, minima nobis a,
-            iure doloribus explicabo aspernatur excepturi repellendus animi!
-            Alias inventore recusandae quam.
-
-            <div class="mt-2">
-              <span onclick="like(this)" style="cursor: pointer"
-                >&#128077;</span
-              >
-              <span>0</span>
-
-              <span class="ms-2" onclick="dislike(this)" style="cursor: pointer"
-                >&#128078;</span
-              >
-              <span>0</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="parent"></div>
     </div>
   </body>
 </html>
