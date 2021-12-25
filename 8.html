@@ -11,6 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <script src="8.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -46,10 +48,14 @@
             Alias inventore recusandae quam.
 
             <div class="mt-2">
-              <span>&#128077;</span>
+              <span onclick="like(this)" style="cursor: pointer"
+                >&#128077;</span
+              >
               <span>0</span>
 
-              <span class="ms-2">&#128078;</span>
+              <span class="ms-2" onclick="dislike(this)" style="cursor: pointer"
+                >&#128078;</span
+              >
               <span>0</span>
             </div>
           </div>
